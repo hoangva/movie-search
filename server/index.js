@@ -12,7 +12,7 @@ const app = express();
 
 app.use(express.static('./build'));
 
-app.get('/page*', (req, res) => {
+app.get('/page/external*', (req, res) => {
   const app = ReactDOMServer.renderToString(<App />);
 
   const indexFile = path.resolve('./build/index.html');

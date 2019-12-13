@@ -20,30 +20,30 @@ const routing = (
         <div>
             <ul>
                 <li>
-                    <Link to="/page">Home</Link>
+                    <Link to="/page/external">Home</Link>
                 </li>
                 <li>
-                    <Link to="/page/need-include">Need Include</Link>
+                    <Link to="/page/external/need-include">Need Include</Link>
                 </li>
                 <li>
-                    <Link to="/page/need-upload">Need Upload</Link>
+                    <Link to="/page/external/need-upload">Need Upload</Link>
                 </li>
                 <li>
-                    <Link to="/page/wrong-name">Wrong Name</Link>
+                    <Link to="/page/external/wrong-name">Wrong Name</Link>
                 </li>
                 <li>
-                    <Link to="/page/wrong-path">Wrong Path</Link>
+                    <Link to="/page/external/wrong-path">Wrong Path</Link>
                 </li>
                 <li>
-                    <Link to="/page/wrong-extension">Wrong Extension</Link>
+                    <Link to="/page/external/wrong-extension">Wrong Extension</Link>
                 </li>
             </ul>
-            <Route exact path="/page" component={App} />
-            <Route exact path="/page/need-include" component={NeedInclude} />
-            <Route exact path="/page/need-upload" component={NeedUpload} />
-            <Route exact path="/page/wrong-name" component={WrongName} />
-            <Route exact path="/page/wrong-path" component={WrongPath} />
-            <Route exact path="/page/wrong-extension" component={WrongExtension} />
+            <Route exact path="/page/external" component={App} />
+            <Route exact path="/page/external/need-include" component={NeedInclude} />
+            <Route exact path="/page/external/need-upload" component={NeedUpload} />
+            <Route exact path="/page/external/wrong-name" component={WrongName} />
+            <Route exact path="/page/external/wrong-path" component={WrongPath} />
+            <Route exact path="/page/external/wrong-extension" component={WrongExtension} />
         </div>
     </Router>
 )
